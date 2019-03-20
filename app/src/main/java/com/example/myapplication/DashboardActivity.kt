@@ -40,15 +40,14 @@ class DashboardActivity : AppCompatActivity() {
                 Log.e("String", jenisKelamin)
             }
         }
-
         tesButton.setOnClickListener {
             var jawab:String = jawaban.text.toString()
-            if (jawab.equals("html")){
+            if (!(jawab.equals(""))){
                 var kirimIntent: Intent = Intent(this,Resultpage::class.java)
+                kirimIntent.putExtra("dataGender", jenisKelamin)
                 kirimIntent.putExtra("dataNama", namaLengkap.text.toString())
                 kirimIntent.putExtra("dataLahir", tglLahir.text.toString())
                 kirimIntent.putExtra("dataJawaban", jawaban.text.toString())
-                kirimIntent.putExtra("dataGender", jenisKelamin)
                 startActivity(kirimIntent)
             }
         }
