@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        tools:context=".Resultpage">
+    <ScrollView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:scrollbarStyle="outsideInset">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="20dp"
+                    android:text="Detail Data Diri Anda"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="Nama Lengkap:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/namaAnda"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18dp"
+                        android:text="Isi Nama"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="Tanggal lahir:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/tglLahirAnda"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18dp"
+                        android:text="Isi Tanggal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="Gender:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/genderAnda"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18dp"
+                        android:text="Isi Gender"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="Bahasa Pemrograman Yang Anda Sukai:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/bahasaAnda"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18dp"
+                        android:text="Isi Bahasa"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
